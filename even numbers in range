@@ -1,0 +1,18 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+int counteven(int n) {
+int count = 0;
+int counter = 0;
+while (counter <= n) {
+if (counter % 2 == 0)
+count++;
+counter++;
+}
+cout << "output: " << count;
+return 0;
+}
+int main() {
+counteven(3);
+return 0;
+}
