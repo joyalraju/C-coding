@@ -11,7 +11,7 @@ int printNos(int n) {
         else if (counter % 5 == 0)
             cout << "Bar ";
         else
-            cout << counter << " ";
+            cout << counter << "  ";
         counter++;
     }
     return 1;
