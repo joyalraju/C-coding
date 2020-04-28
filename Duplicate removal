@@ -7,7 +7,7 @@ int main() {
 vector<string> array, ar;
 array= {"one", "one", "two", "three", "three", "two"};
 sort(array.begin(), array.end());
-cout << " final words list: " << endl;
+cout << " final words list will be: " << endl;
 int s = array.size();
 for (int i = 0; i < s; i++) {
 if (array[i] == array[i + 1])
