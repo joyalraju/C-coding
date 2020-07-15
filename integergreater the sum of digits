@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+int sumfunction (int a)
+{
+    int s=0;
+    while(a!=0)
+    {
+        s = s + a % 10;
+        a= a/ 10;
+    }
+return s;
+}
+
+int greatint(int a)
+{
+    int s;
+    int b=a+1;
+    s=sumfunction(a);
+    //int twice=2*s;
+ while(b>a)
+ {
+     if (sumfunction(b)==(2*s))
+     return b;
+     else
+     b=b+1;
+ }
+   
+}
+int main()
+{
+    int n,z;
+    cout<<"ENTER INTEGER: "<<endl;
+    cin>> n;
+   z= greatint(n);
+cout<<"sum should be : "<<z<< endl;
+    return 0;
+}
+
